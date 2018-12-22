@@ -3,13 +3,18 @@
  * @type {String}
  */
 
-var dataCacheName = 'Data-v1';
-var cacheName = 'PWA-1';
+var dataCacheName = 'Data-v0';
+var cacheName = 'PWA-0';
 var filesToCache = [
   '/',
   '/index.html',
   '/scripts/app.js',
-  '/styles/inline.css'
+  '/styles/inline.css',
+  '/images/delete.svg',
+  '/images/clear.svg',
+  '/images/add.svg',
+  '/images/add_item.svg',
+  '/images/minus.svg'
 ];
 
 self.addEventListener('install', function(e) {

@@ -58,7 +58,7 @@ body {
     position: fixed;
     font-size: 20px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-    padding: 16px 16px 0 16px;
+    /* padding: 16px 16px 0 16px; */
     will-change: transform;
     display: -webkit-box;
     display: -webkit-flex;
@@ -90,12 +90,106 @@ body {
     z-index: 1000;
 }
 
-.header__title {
+.headerTitle {
     font-weight: 400;
     font-size: 18px;
+    line-height: 56px;
     margin: 0;
+    padding-left: 16px;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    text-indent: -30000px;
+    overflow: hidden;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.button:active {
+    opacity: 1;
+}
+
+.header .button {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.header #butClear {
+    background: url(/images/clear.svg) center center no-repeat;
+}
+
+.header #butAdd {
+    background: url(/images/add_item.svg) center center no-repeat;
+}
+
+.main {
+    padding-top: 60px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card {
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+}
+.cardTemplate{
+    display: none;
+}
+.input {
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    /* line-height: 40px; */
+    outline: none;
+    padding: 0 5px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    width: 66px;
+    text-align: center;
+}
+.input:disabled{
+    color: #606266;
+}
+.inputName{
+    width: 110px;
+}
+.main .button{
+    margin: 0 5px;
+}
+.butAdd {
+    background: url(/images/add.svg) center center no-repeat;
+}
+
+.butMinus {
+    background: url(/images/minus.svg) center center no-repeat;
+}
+
+.butDelete {
+    background: url(/images/delete.svg) center center no-repeat;
 }
