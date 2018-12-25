@@ -43,7 +43,7 @@ app.addCard = function () {
     let card = {
         key: Math.random().toString(36).substr(2),
         name: '瞪眼' + app.cards.length,
-        param: 4,
+        param: 0,
         total: 0
     };
     // 添加进数组

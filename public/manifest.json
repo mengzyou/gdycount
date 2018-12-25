@@ -1,6 +1,6 @@
 {
-  "name": "干瞪眼",
-  "short_name": "干瞪眼计算器",
+  "name": "GDY",
+  "short_name": GDY计账",
   "icons": [{
     "src": "images/icons/icon-128x128.png",
       "sizes": "128x128",
